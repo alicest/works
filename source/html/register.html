@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html><!-- InstanceBegin template="/Templates/Template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>用户注册页面</title>
+ <link href="../css/style.css" type="text/css" rel="stylesheet">
+ <link href="../css/demo.css" type="text/css" rel="stylesheet">
+    <link href="../css/all.css" type="text/css" rel="stylesheet">
+ <script src="../js/regist.js"></script>
+</head>
+<body>
+<div class="main">
+    <div id="logo"><img src="../image/logo.gif"></div>
+    <div id="menu"><a href="login.html"><img src="../image/menu1-1.gif"></a><a href="search.html"><img src="../image/menu2-2.gif"></a><a href="intro.html"><img src="../image/menu3-2.gif"></a></div>
+    <div id="menuBg1"></div>
+    <!--用户注册开始-->
+    <div class="register">
+        <table width="857" align="center" height="450" border="0" cellspacing="0" cellpadding="0">
+          <tr >
+            <td ><img src="../image/register-top.gif" style="vertical-align: bottom"></td>
+          </tr>
+          <tr>
+            <td><table width="100%" border="0" cellspacing="0" cellpadding="0" >
+            <tr>
+              <td class="sLine" width="3"></td>
+              <td>
+               <form action="register.html" method="post" name="myform">
+                 <table width="760" align="center" height="400">
+                  <tr>
+                    <td class="register-bold">会员信息<img src="../image/dot_line_2.gif" align="middle"></td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <table width="80%" border="0" cellspacing="0" cellpadding="0" align="center">
+                        <tr>
+                          <td width="15"><img src="../image/register-arrow.gif"></td>
+                          <td class="register-td">E-mail：</td>
+                          <td width="180"><input name="email" type="text" class="register-input"></td>
+                         <td text-align="left"><input name="check1" type="button" value=" "class="register-check" onClick="chemail(email)">请填写常用电子邮件</td>
+                       </tr>
+                        <tr>
+                            <td width="15"><img src="../image/register-arrow.gif"></td>
+                            <td class="register-td">会&nbsp;员&nbsp;名：</td>
+                            <td><input name="username" type="text" class="register-input"></td>
+                            <td><input name="check2" type="button" value=" "class="register-check" onClick="checkuser(username)">会员名须以字母开头，至少6位</td>
+                        </tr>
+                        <tr>
+                        <td width="15"><img src="../image/register-arrow.gif"></td>
+                        <td class="register-td">密&nbsp;&nbsp;码：</td>
+                        <td><input name="psw" type="password" class="register-input" onBlur="checkpwd(psw)"></td>
+                        <td><div id="fpwd">密码设置至少6位</div></td>
+                      </tr>
+                        <tr>
+                        <td width="15"><img src="../image/register-arrow.gif"></td>
+                        <td class="register-td">重复密码：</td>
+                        <td><input name="repeatpsw" type="password" class="register-input" onBlur="checkrpwd(psw,repeatpsw)"></td>
+                        <td><div id="frepeatpwd"></div></td>
+                      </tr>
+                        </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="register-bold"><img src="../image/dot_line_2.gif" align="middle"></div>
+                      <div align="center"><input name="B1" type="submit" value="&nbsp;" onMouseOut="this.className='register-over'" onMouseOver="this.className='register-out'" class="register-over"></div>
+                    </td>
+                  </tr>
+                </table>
+               </form>
+              </td>
+              <td class="sLine" width="3"></td>
+            </tr>
+                </table>
+           </td>
+          </tr>
+          <tr>
+            <td><img src="../image/register-bottom.gif"></td>
+          </tr>
+        </table>
+    </div>
+</div >
+
+<div id="bottom-bg"class="bottom-bg">网站导航 | <a href="index.html" class="a-white">网站首页</a> | <a href="search.html" class="a-white">职位搜索</a> | <a href="login.html" class="a-white">Myjob</a> | <a href="register.html" class="a-white">用户注册</a> | <a href="login.html" class="a-white">用户登录</a> | <a href="intro.html" class="a-white">简历管理</a> | <a href="company.html" class="a-white">招聘公司</a></div>
+<div id="bottom" class="bottom">人才招聘 Email:hr@51job.com<BR>个人求职 Email:club@51job.com　或垂询:800-820-5100 
+<BR>
+未经本招聘网站同意，不得转载本网站之所有招聘信息及作品 
+<BR>
+无忧工作网版权所有&copy;2010-2020<BR>
+<a href="http://www.miibeian.gov.cn" target="_blank"><img src="../image/bottom1.gif" border="0"></a></div>
+</body>
+</html>

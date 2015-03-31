@@ -1,0 +1,82 @@
+
+div.welcome{
+    font-size: 18px ;
+    font-weight:bold;
+    text-align: center;
+    font-family:italic arial,sans-serif;
+    padding-top: 3px;
+}
+#welcome{
+    padding-top: 0px;
+    vertical-align:top;
+}
+#recent{
+    font-size: 14px ;
+    font-weight:bold;
+}
+.main1,.main2 table td{
+    border-bottom:1 #cccccc dotted;
+    line-height:25px;
+    text-align: left;
+}
+/*.white {color: #FFFFFF}*/
+
+.register-input{
+            float: left;
+            border-right:1px solid #ddd;
+            border-bottom:1px solid #ddd;
+			width:160px;
+			height:22px;
+          background-color:white;
+           }
+
+.index-input{
+            border-right:1px solid #ddd;
+            border-bottom:1px solid #ddd;
+             height:16px;
+			 width:100px;
+			 font-size:11px;
+             background-color: white;
+}
+.index-btn{
+			border:0;
+			background-image:url(../image/login.gif);
+			overflow:hidden;
+			height:20px;
+			width:46px;
+			}
+.index-btn1{
+	         border: 0;
+	         background-image:url(../image/search.gif);
+	         width: 70px;
+	         height: 30px;
+	         overflow:hidden;
+	         cursor:pointer;
+         }	
+.index-btn2{
+	         border: 0;
+	         background:url(../image/btn_bg.gif) no-repeat;
+	         width: 160px;
+	         height: 18px;
+	         overflow:hidden;
+			 padding-left:20px;
+			 padding-top:2px;
+    float: left;
+         }
+.bottom-bg{
+           color:#ffffff;
+           padding-top:9px;
+           text-align:center;
+           background-image:url(../image/bottom-bg.gif);
+		   height:35px;
+           overflow:hidden;
+		   width:1024px;
+           }
+.bottom{
+        color:#414141;
+        line-height:20px;
+        text-align:center;
+		width:1000px;
+	   }
+
+

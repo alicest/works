@@ -1,0 +1,92 @@
+body {
+    width: 1024px;
+    margin: 0 auto ;/*上下边距0，左右自动*/
+    font-size:12px;
+    text-align:center;
+    font-weight: normal;
+    font-family: verdana;
+}
+input{
+    background:transparent;
+    border-right:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    line-height: 20px;
+    vertical-align:middle;/*使元素和文本text对齐，如单选框*/
+}
+select{
+    height:25px;
+}
+select,input{
+    padding-left: 5px;
+}
+input[type=radio]{
+    height:20px;
+}
+img{ border:0;}
+td{font-size:12px;
+    color:#414141;
+    line-height:22px;}/*color是字体颜色*/
+marquee{
+    font-size: 15px ;
+    font-weight:bold;
+     text-align: left;
+}
+a{color:#414141;text-decoration:none;}
+a:hover{color:#ff7000;text-decoration:none;}
+
+
+.sLine{
+    background:url(../image/register-line.gif) repeat-y;
+}
+.hLine{
+    border-top:3 solid #ddd;
+    height:3px;
+    padding-bottom:10px;
+}
+
+.a-white{
+    padding-top:0px;
+    color:#FFFFFF;
+    text-decoration:none;
+}
+.a-white:hover{
+    color:black;
+    text-decoration:none;
+}
+
+.yellow{
+    color:#ff7000;
+}
+.main{
+    padding-top:10px;
+    padding-bottom:10px;
+    width:1024px;
+
+}
+.main #mScroll{
+    align:right;
+    position:absolute;
+    left:10px;
+    top:100px;
+    width:109px;
+    background-color:#CCCCCC;
+    z-index:2;
+}
+#logo{
+    float:left;
+    padding-left:19px;
+}
+#menu{
+    padding-top:30px;
+    text-align:right;
+    padding-right:11px;  }
+
+#menuBg1,#menuBg2{
+    background:url(../image/menu-bg1.gif) repeat-x;
+    height:33px;
+    overflow:hidden;
+    color:#FFFFFF;
+    padding-top:3px;
+    border:1 #ff7000 solid;
+    border-bottom:0;
+}

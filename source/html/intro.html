@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>简历管理</title>
+    <link href="../css/style.css" type="text/css" rel="stylesheet">
+    <link href="../css/demo.css" type="text/css" rel="stylesheet">
+    <link href="../css/all.css" type="text/css" rel="stylesheet">
+    <script src="../js/check.js"></script>
+</head>
+<body>
+
+<div class="main">
+    <div id="logo"><img src="../image/logo.gif"></div>
+    <div id="menu">
+        <a href="login.html"><img src="../image/menu1-2.gif"></a>
+        <a href="search.html"><img src="../image/menu2-2.gif"></a>
+        <a href="intro.html"><img src="../image/menu3-1.gif"></a>
+    </div>
+    <div id="menuBg1" >简历中心 | 求职信 | 简历指导 </div>
+<!--简历管理开始-->
+   <div id="tb1" >
+      <table  width="920" cellspacing="0" cellpadding="0" align="center">
+       <tr>
+         <td class="intro-left" valign="top"><img src="../image/intro-left1.gif">
+           <div class="intro-l1"><img src="../image/register-arrow.gif"> 我的简历</div>
+           <div><img src="../image/intro-left2.gif"></div>
+           <div class="information">
+                <img src="../image/intro-1.gif"><a href="#base">基本个人信息</a><BR>
+                <img src="../image/intro-1.gif"><a href="#resume">工作经验</a><BR>
+                <img src="../image/intro-1.gif"><a href="#resume">教育经历</a><BR>
+                <img src="../image/intro-1.gif"><a href="#resume">培训经历</a><BR>
+                <img src="../image/intro-1.gif">语言能力<BR>
+                <img src="../image/intro-1.gif"><a href="#resume">求职意向/自我评价</a><BR>
+                <img src="../image/intro-1.gif">附加信息<BR><img src="../image/intro-1.gif">证书<BR><img >附件
+            </div>
+           <div><img src="../image/intro-left3.gif"></div>
+           <div class="information">
+                <img src="../image/intro-1.gif"> <a href="#gaoji">高级人才附加信息</a><BR>
+                <img src="../image/intro-1.gif"> <a href="#gaoji">IT技能</a> <BR>
+                <img src="../image/intro-1.gif"> <a href="#gaoji">项目经验</a>
+            </div>
+         </td>
+         <td valign="top" class="intro-right" id="base">
+          <div class="intro-l1"><img src="../image/register-arrow.gif"> 基本个人信息 (*为必填项)</div>
+	      <div class="hLine" ></div>
+<!--简历注册开始-->
+          <div>
+            <form action="intro.html" method="post" name="myform" onSubmit="check()">
+             <table id="regist1" width="99%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td ><span class="yellow">*</span> 姓名</td>
+                <td ><input name="username" type="text"></td>
+                <td ><span class="yellow">*</span> 性别</td>
+                <td>
+                    <input name="sex" type="radio" value="男" checked style="border:0;"> 男&nbsp;
+                    <input name="sex" type="radio" value="女" style="border:0;"> 女</td>
+             </tr>
+              <tr>
+                <td><span class="yellow">*</span> 出生日期</td>
+                <td>
+                   <select name="BirthYear">
+                       <option value=1999 selected>1999</option>
+                  </select>
+                  年 <select name="BirthMonth" onchange="monDay()">
+                          <option value=1 selected>1
+                    </select>
+                 月 <select  name="BirthDay">
+                          <option value=1 selected>1</option>
+                </select>
+                日</td>
+                  <td><span class="yellow">*</span> 工作年限</td>
+                  <td>
+                      <select style="width: 100px" name="WorkYear">
+                          <option
+                          value="0" selected>--请选择--</option> <option
+                          value="在读学生">在读学生</option><option value="应届毕业生">应届毕业生</option><option
+                          value="一年以上">一年以上</option><option value="二年以上">二年以上</option><option
+                          value="三年以上">三年以上</option><option value="寺年以上">五年以上</option><option
+                          value="八年以上">八年以上</option><option value="十年以上">十年以上</option>
+                     </select>
+                  </td>
+              </tr>
+              <tr>
+                <td >国家或地区</td>
+                <td>
+        <select style="width:130px" onchange="JavaScript:SetIDType()" name="Nation" height="30px">
+            <option
+              value="中国大陆" selected>中国大陆</option><option 
+              value="中国香港">中国香港</option><option value="中国澳门">中国澳门</option><option 
+              value="中国台湾">中国台湾</option>
+        </select>
+    </td>
+    <td >户口地</td>
+    <td>
+        <select name="hProvince" onChange="changeH()" style="width: 100px">
+             <option selected>--选择省份--</option>
+        </select>
+       <select name="hCity" style="width: 100px">
+            <option selected>--选择城市--</option>
+       </select>
+    </td>
+  </tr>
+              <tr>
+                <td ><span class="yellow">*</span> 证件类型</td>
+                <td><select style="width: 130px" name="CardType"> <option
+                          value="身份证" selected>身份证</option><option value="护照">护照</option><option
+                          value="军人证">军人证</option><option value="香港身份证">香港身份证</option><option
+                          value="其它">其它</option></select></td>
+                <td ><span class="yellow">*</span> 证件号</td>
+                <td><input name="CardNumber" type="text"></td>
+              </tr>
+              <tr >
+                 <td ><span class="yellow">*</span> 联系方式</td>
+                 <td><input style="width: 160px"  name="tel"></td>
+                 <td ><span class="yellow">*</span> E-mail</td>
+                 <td><input name="email" type="text"></td>
+               </tr>
+              <tr>
+                <td >政治面貌</td>
+                  <td>
+                      <input name="person" type="radio" value="dang" checked style="border:0;"> 党员
+                      <input name="person" type="radio" value="tuan" style="border:0;"> 团员
+                      <input name="person" type="radio" value="common" style="border:0;"> 群众
+                  </td>
+              </tr>
+              <tr>
+                <td ><span class="yellow">*</span> 现居住地</td>
+                <td>
+                  <select name="selProvince" onChange="changeCity()" style="width: 100px">
+                    <option>--选择省份--</option>
+                  </select>
+                  <select name="selCity" style="width: 100px">
+                    <option>--选择城市--</option>
+                  </select>
+                </td>
+              </tr>
+              <tr><td colspan="4" id="resume">
+                  <div class="intro-l1" align="left" ><img src="../image/register-arrow.gif"> 我的简历</div>
+                  <!--实现一条空白div-->
+                      <div class="hLine" ></div>
+                  </td>
+               </tr></table></form>
+         </div>
+       <div id="experience">
+        <form action="intro.html" method="post" name="myform2" onSubmit="check()">
+         <table width="99%" border="0" cellspacing="0" cellpadding="0" >
+               <tr>
+                   <td>工作经验</td>
+                   <td><textarea name="Cwork" ></textarea></td>
+              </tr>
+               <tr >
+                   <td><span class="yellow">*</span> 教育经历</td>
+                   <td ><textarea name="edu" ></textarea></td>
+              </tr>
+              <tr >
+                   <td>培训经历</td>
+                   <td><textarea name="train"></textarea></td>
+              </tr>
+              <tr >
+                  <td ><span class="yellow">*</span> 语言能力</td>
+                  <td><textarea name="introself"></textarea></td>
+              </tr>
+              <tr >
+                  <td ><span class="yellow">*</span> 求职意向</td>
+                  <td><textarea name="introself"></textarea></td>
+              </tr>
+              <tr >
+                <td colspan="4" id="gaoji">
+                 <div class="intro-l1" align="left"><img src="../image/register-arrow.gif"> 人才附加信息</div>
+                <div class="hLine"><!--实现一条空白div--></div>
+              </td>
+              </tr>
+             <tr>
+                 <td >附加信息</td>
+                 <td ><textarea name="otheredit"></textarea></td>
+              </tr>
+              <tr>
+                   <td >IT技能</td>
+                   <td><textarea name="ITedit"></textarea></td>
+              </tr>
+             <tr >
+                   <td >项目经验</td>
+                   <td><textarea name="project"></textarea></td>
+              </tr>
+              <tr>
+                  <td ><span class="yellow"></span>自我评价</td>
+                  <td><textarea name="introself"></textarea></td>
+              </tr>
+              <tr><td height="30" colspan="4"><HR size="2" color="#ff7000" width="96%" align="center"></td></tr>
+              <tr>
+                 <td ></td>
+                 <td><input name="b1" type="submit" value="保存"><input name="b1" type="reset" value="取消" ></td>
+              </tr>
+         </table></form>
+        </div>
+       </td>
+     </tr>
+    </table>
+    <script src="../js/resume.js"></script>
+    <script src="../js/calender.js"></script>
+  </div>
+</div>
+<div id="bottom-bg"class="bottom-bg">网站导航 | <a href="index.html" class="a-white">网站首页</a> | <a href="search.html" class="a-white">职位搜索</a> | <a href="login.html" class="a-white">Myjob</a> | <a href="register.html" class="a-white">用户注册</a> | <a href="login.html" class="a-white">用户登录</a> | <a href="intro.html" class="a-white">简历管理</a> | <a href="company.html" class="a-white">招聘公司</a></div>
+<div id="bottom" class="bottom">人才招聘 Email:hr@51job.com<BR>个人求职 Email:club@51job.com　或垂询:800-820-5100 
+<BR>
+未经本招聘网站同意，不得转载本网站之所有招聘信息及作品 
+<BR>
+无忧工作网版权所有&copy;2010-2020<BR>
+<a href="http://www.miibeian.gov.cn" target="_blank"><img src="../image/bottom1.gif" border="0"></a></div>
+</body>
+</html>
